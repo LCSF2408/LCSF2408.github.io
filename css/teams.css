@@ -1,0 +1,52 @@
+/* team styles */
+
+.team-images-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team h3{
+    font-style: italic;
+    text-decoration: underline;
+    margin-top: 2%;
+}
+.team-images-container figure{
+    margin-top: 2%;
+    width: 300px;
+    background-color: #003B53;
+    text-align: center; 
+    color: white; 
+}
+
+.team-images-container figure img{
+    width: 100%;
+    height: 200px;
+}
+
+.team-images-container .person-name, .team-images-container span{
+    color: rgb(248, 169, 21);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.team-images-container figure .team-experience{
+    text-align: justify;
+    padding: 2%;
+}
+
+@media (max-width:430px){
+    .team-images-container{
+        display: block;
+        margin-top: 1%;
+    }
+
+    .team-images-container figure {
+        width: 100%;
+        margin: 3% auto 10% auto;
+    }
+
+    .team section h3{
+        margin-top: 4%;
+    }
+
+}

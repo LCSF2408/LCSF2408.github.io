@@ -1,0 +1,350 @@
+/* Setting the default margins and padding to zero */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* modifying the styles for logo in the header section */
+header a{
+    font-size: 24px;
+    text-decoration: none;
+    color: #003B53;
+    font-style: italic;
+}
+
+
+
+/* setting the background color for nav and alligning the text in the navbar to center */
+nav{
+    background-color: #f8f8f6; 
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 9px solid rgb(207, 206, 206);
+}
+
+nav img{
+    width: 150px;
+}
+
+ th, td{
+    text-align: center;
+}
+
+
+/* making the list items to inline elements to arrange theem side by side */
+nav ul li {
+    list-style-type: none;
+    padding: 14px;
+    display: inline-block;
+}
+
+/* applying some styles to  nav links */
+ul li a{
+    color: #003B53;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* show an underline when we hover on the nav link */
+ul li a:hover{
+    border-bottom: 2px solid #ff231b;
+}
+
+ul li a.active{
+    border-bottom: 2px solid #2593fa;
+
+}
+
+/* Updating the body's background color */
+.home, .about-page, .team, .training-page, .faq, .specials-page, .media, .contact-page{
+    background-color: #f8f8f6; 
+    padding: 1% 8%;
+    margin: -8px 0px 0px 0px;
+}
+
+
+.welcome-data p, .welcome-data h2{
+    margin: 8px 0px;
+}
+
+
+/* Contact page styling */
+#contact{
+    text-align: center;
+}
+
+.tel-link {
+    background-color: #373684;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+
+
+
+
+
+/* Footer */
+footer{
+    font-size: 14px;
+    padding: 8px 0px;
+    background-color: #003B53;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 30px;
+}
+
+footer a{
+    color: rgb(248, 169, 21);
+}
+
+footer a:hover{
+    text-decoration: underline rgb(255, 102, 0);
+
+}
+/* main page styling */
+.home-screen-img{
+    width: 100%;
+    height: 480px;
+}
+
+
+
+/* specials page styling */
+
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    margin-top: 2%;
+}
+
+.product-card{
+    width: 100%;
+    background-color: #233e61;
+    margin: 8px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding-bottom: 4px;
+    box-shadow: 0px 4px 10px rgba(55, 70, 99, 0.5);
+}
+
+/* .product-card:hover{
+    box-shadow: 0px 4px 10px rgba(0,0,0,1);
+} */
+
+.product-card p{
+    padding: 2px 9px;
+}
+
+.product-card-image{
+    width: 100%;
+    height: 180px;
+}
+
+@media( (min-width:450px) and (max-width:768px)){
+    .products{
+        display: grid;
+        grid-template-columns:47% 47%;
+    }
+
+    .specials-page h2{
+        margin-top: 3%;
+    }
+}
+
+@media(max-width:450px){
+    .products{
+        display: block;
+    }
+    
+    .product-card{
+        margin-top: 5%;
+    }
+
+    .specials-page h2{
+        margin-top: 5%;
+    }
+
+    .customer-guarantee{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+/* about styles */
+.about-page h1{
+    margin: 2% 0 0.5% 0 ;
+    font-size: 24px;
+}
+
+.team h1, .media h1, .faq h1{
+    margin-top: 10px;
+
+}
+
+.home h2, .home ul li span, .about-page span, .about-page h1,  .team h3, .team span, caption, .faq ol li,
+ .specials-page h2, .customer-guarantee h2, .media-container h3 {
+    color: #003B53;
+    font-weight: bold;
+}
+
+.about-page li, .team li, .home ul li{
+    margin: 3px 0;
+    list-style-type: disc;
+}
+
+.about-page p, .faq{
+    text-align: justify;
+}
+
+.home ul li, .about-page li, .team li, .faq li, .faq p{
+    margin-left: 30px;
+}
+
+.media-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.media-container h3{
+    margin: 12px 4px 16px 0px;
+}
+
+.audio{
+    width: 40%;
+}
+
+.video-container {
+    width: 56%;
+    margin-left: 16px;
+}
+
+.video-container video{
+    width: 100%;
+}
+
+
+
+@media (max-width:430px){
+
+    nav ul li a.active{
+        text-decoration: none;
+        border: none;
+    }
+    nav a img{
+        display: block;
+        margin: 0 auto;
+    }
+    .home-screen-img{
+        width: 100%;
+        height: 250px;
+    }
+
+    nav{
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        border-bottom: 1px solid rgb(19, 34, 53);
+        text-align: center;
+    }
+    
+    .home h2{
+        margin-top: 8%;
+    }
+
+    .media-container{
+        display: block;
+    }
+
+    .audio{
+        width: 100%;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+    .video-container video{
+        width: 100%;
+    }
+}
+
+@media((min-width:430px) and (max-width:768px)){
+
+    .home-screen-img{
+        height: 400px;
+    }
+    .media-container .audio{
+        width: 310px;
+    }
+    .video-container{
+        width: 310px;
+    }
+
+    .video-container video{
+        width: 100%;
+    }
+
+
+}
+
+
+/* faq styles */
+.faq ul li{
+    margin-left: 46px;
+    list-style-type: disc;
+    color: black;
+    font-weight: 500;
+    
+   
+}
+
+.faq ol li{
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+@media (max-width:430px){
+    .faq ul li{
+        margin-top: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

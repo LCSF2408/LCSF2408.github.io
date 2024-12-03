@@ -1,0 +1,39 @@
+/* Training Styles */
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 6px 18px;
+    text-align: start !important;
+}
+
+table th{
+    background-color: #003B53;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+table{
+    margin: 0 auto;
+    width: 100%;
+}
+
+caption{
+    font-size: 24px;
+    margin: 1% 0;
+    text-transform: capitalize;
+}
+
+tr:nth-child(odd){
+    background-color: #82c5dd;
+}
+
+tr:nth-child(even){
+    background-color: #cbecf9;
+}
+
+tbody tr:hover{
+    background-color: #eef79d;
+}
